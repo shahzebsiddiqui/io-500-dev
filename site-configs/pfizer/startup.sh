@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ml GCC/5.4.0-2.27 OpenMPI/2.0.0
 
 
 workdir=/lustre/scratch/io500-tests
@@ -16,6 +17,7 @@ io500_run_find="True"
 io500_run_ior_easy_read="True"
 io500_run_md_easy_stat="True"
 io500_run_ior_hard_read="True"
+io500_run_md_hard_read="True"
 io500_run_md_hard_stat="True"
 io500_run_md_easy_delete="True" # turn this off if you want to just run find by itself
 io500_run_md_hard_delete="True" # turn this off if you want to just run find by itself
@@ -69,6 +71,7 @@ function setup_find {
    # the serial version that should run (SLOWLY) without modification
    io500_find_mpi="False"
    io500_find_cmd=$ROOT/bin/sfind.sh
+   io500_find_cmd_args=""
 
 }
 
