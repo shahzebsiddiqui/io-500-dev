@@ -1,5 +1,5 @@
 #!/bin/sh
-#BSUB -N 8
+#BSUB -N 4
 #BSUB -q short
 #BSUB -app medium
 #BSUB span[hosts=1]
