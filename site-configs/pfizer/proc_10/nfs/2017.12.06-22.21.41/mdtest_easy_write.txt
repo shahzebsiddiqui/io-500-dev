@@ -1,0 +1,20 @@
+-- started at 12/06/2017 22:21:57 --
+
+mdtest-1.9.3 was launched with 10 total task(s) on 1 node(s)
+Command line used: /lustre/scratch/siddis14/io-500-dev/bin/mdtest -C -F -d /nfs/grid/software/io500-tests/data/2017.12.06-22.21.41/mdt_easy -n 2000 -u -L
+Path: 
+FS: 3.0 TiB   Used FS: 68.7%   Inodes: 23424.0 Mi   Used Inodes: 91.8%
+
+10 tasks, 20000 files
+
+SUMMARY: (of 1 iterations)
+   Operation                      Max            Min           Mean        Std Dev
+   ---------                      ---            ---           ----        -------
+   File creation     :       2947.264       2947.264       2947.264          0.000
+   File stat         :          0.000          0.000          0.000          0.000
+   File read         :          0.000          0.000          0.000          0.000
+   File removal      :          0.000          0.000          0.000          0.000
+   Tree creation     :         49.757         49.757         49.757          0.000
+   Tree removal      :          0.000          0.000          0.000          0.000
+
+-- finished at 12/06/2017 22:22:04 --

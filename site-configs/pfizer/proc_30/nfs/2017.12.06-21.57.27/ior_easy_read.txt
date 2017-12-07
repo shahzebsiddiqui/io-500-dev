@@ -1,0 +1,31 @@
+IOR-3.1.0: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: fsync() only available in POSIX.  Using value of 0.
+Began: Wed Dec  6 22:00:13 2017
+Command line used: /lustre/scratch/siddis14/io-500-dev/bin/ior -r -R -C -Q 1 -g -G 27 -k -e -t 1024k -b 500M -F -o /nfs/grid/software/io500-tests/data/2017.12.06-21.57.27/ior_easy/ior_file_easy
+Machine: Linux amrndhl1228.pfizer.com
+
+Test 0 started: Wed Dec  6 22:00:13 2017
+Summary:
+	api                = MPIIO (version=3, subversion=1)
+	test filename      = /nfs/grid/software/io500-tests/data/2017.12.06-21.57.27/ior_easy/ior_file_easy
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 30 (30 per node)
+	repetitions        = 1
+	xfersize           = 1 MiB
+	blocksize          = 500 MiB
+	aggregate filesize = 14.65 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+read      719.71     512000     1024.00    0.123197   20.72      0.001067   20.84      0   
+
+Max Read:  719.71 MiB/sec (754.67 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+read          719.71     719.71     719.71       0.00   20.84174 0 30 30 1 1 1 1 0 0 1 524288000 1048576 15728640000 MPIIO 0
+
+Finished: Wed Dec  6 22:00:34 2017
