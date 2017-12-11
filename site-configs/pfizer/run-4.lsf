@@ -1,7 +1,0 @@
-#!/bin/sh
-#BSUB -N 4
-#BSUB -q short
-#BSUB -app medium
-#BSUB span[hosts=1]
-cd /lustre/scratch/siddis14/io-500-dev/site-configs/pfizer/
-./startup.sh
